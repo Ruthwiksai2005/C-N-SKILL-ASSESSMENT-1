@@ -49,6 +49,7 @@ LoRaWAN is the backbone of many "Smart City" and industrial IoT applications.
 Originally, the ALOHA protocol was designed for satellite-based links connecting the Hawaiian Islands.
 •	Implementation: Geographically dispersed stations transmitted data to a central satellite without a coordinator.
 •	Why it's used: In the 1970s, the hardware required for complex slot synchronization over massive distances was cost-prohibitive. Pure ALOHA provided a functional, uncoordinated method for simple data exchange.
+
 <img width="606" height="396" alt="image" src="https://github.com/user-attachments/assets/713c602e-2492-4fe8-8326-8cb0301e39b2" />
 
 ---
@@ -56,6 +57,7 @@ Originally, the ALOHA protocol was designed for satellite-based links connecting
 In emergency or tactical scenarios, such as search-and-rescue operations in remote areas, infrastructure is often non-existent.
 •	Implementation: Spontaneous radio networks allow units to broadcast status updates or GPS coordinates.
 •	Why it's used: In these "ad-hoc" environments, there is no central timing mechanism available to establish slots. Pure ALOHA allows for immediate, uncoordinated transmission that is vital for spontaneous communication.
+
 <img width="595" height="376" alt="image" src="https://github.com/user-attachments/assets/8b5a89d1-fe7e-481b-bf42-933beba77105" />
 
 ---
@@ -73,6 +75,7 @@ Slotted ALOHA is the preferred choice for systems that experience higher traffic
 RFID is widely used in retail and logistics for inventory tracking.
 •	Implementation: When an RFID reader scans a pallet of goods, it uses Slotted ALOHA to prevent hundreds of tags from responding at the exact same time.
 •	Why it's used: The reader acts as the "master clock," dictating discrete time slots. Tags are programmed to only respond during these specific slots. This controlled environment significantly reduces the collision rate, allowing the reader to identify multiple items rapidly.
+
 <img width="595" height="381" alt="image" src="https://github.com/user-attachments/assets/40cb882f-252b-4ec1-8fc8-d66b1b5dc307" />
 
 ---
@@ -89,6 +92,7 @@ Before a mobile phone establishes a dedicated high-speed data connection, it mus
 While some IoT uses Pure ALOHA for simplicity, others—like smart utility meters—require higher reliability.
 •	Implementation: Smart meters for water or electricity send periodic usage data.
 •	Why it's used: In high-density urban areas with thousands of meters, Pure ALOHA would lead to constant collisions. By synchronizing meters to discrete time slots, utility companies ensure a more reliable data collection process.
+
 <img width="585" height="384" alt="image" src="https://github.com/user-attachments/assets/517175a4-0a6d-4b24-9a02-c67f301e44f4" />
 
 ---
@@ -104,16 +108,15 @@ In both real-time scenarios, collisions are inevitable. To ensure the network do
 The choice between Pure and Slotted ALOHA is governed by the specific requirements of the real-time scenario. Pure ALOHA remains the king of simplicity and power efficiency, making it the perfect choice for the burgeoning world of uncoordinated IoT devices. Conversely, Slotted ALOHA provides the necessary structure and doubled efficiency required for higher-density commercial applications like cellular networks and RFID systems. Both protocols demonstrate that even "random" access requires a calculated strategy to ensure successful global communication.
 
 # Question Bank - ALOHA Protocols
-PART A - Fill in the Blanks
+
+# PART A - Fill in the Blanks
 1.	Pure ALOHA has a maximum efficiency of _________%.
 2.	In _________ ALOHA, data can only be transmitted at the beginning of a time slot.
 3.	LoRaWAN typically uses _________ ALOHA for uplink communication to save energy.
 4.	The maximum efficiency of Slotted ALOHA is _________%.
 5.	Both protocols require nodes to wait for a _________ amount of time to retransmit after a collision.
 
-
-
-PART B - Match the Following
+# PART B - Match the Following
 Column A	Column B
 1. RFID Systems	a. Uncoordinated / Random timing
 2. Pure ALOHA	b. Historically used for Hawaiian satellite links
@@ -121,13 +124,13 @@ Column A	Column B
 4. VSAT	d. Low-power IoT uplink
 5. Original ALOHAnet	e. Satellite data transmission using slots
 Answer Key: 1-c, 2-a, 3-d, 4-e, 5-b
-PART C - True or False
+# PART C - True or False
 1.	Pure ALOHA is more efficient than Slotted ALOHA. (False)
 2.	Cellular networks use Slotted ALOHA for the initial call setup request. (True)
 3.	Slotted ALOHA requires all devices to be synchronized to a global clock or beacon. (True)
 4.	Collisions cannot occur in Slotted ALOHA. (False)
 5.	Pure ALOHA is best suited for high-traffic environments. (False)
-PART D - Multiple Choice Questions (MCQs)
+# PART D - Multiple Choice Questions (MCQs)
 1.What is the main advantage of Pure ALOHA?
 a. High Efficiency
 b. Simplicity and Low Power
@@ -152,12 +155,12 @@ b. Emergency Radio
 c. Cable TV Networks (DOCSIS)
 d. Simple LANs
 Answer: c
-PART E - Short Answer Questions
+# PART E - Short Answer Questions
 1.	Define the "vulnerable period" in the context of Pure ALOHA.
 2.	Why is Slotted ALOHA more efficient than Pure ALOHA?
 3.	Explain why LoRaWAN devices prefer Pure ALOHA over Slotted ALOHA.
 4.	What is the role of a "Random Backoff" timer?
-PART F - Long Answer Questions
+# PART F - Long Answer Questions
 1.	Compare Pure ALOHA and Slotted ALOHA with respect to synchronization, efficiency, and real-time use cases.
 2.	Elaborate on the real-time implementation of Slotted ALOHA in Cellular Network call setups and RFID systems.
 3.	Discuss the limitations of Pure ALOHA and how Slotted ALOHA addresses these issues through timing constraints.
